@@ -1,35 +1,35 @@
 <template>
   <div class="background">
     <div class="container">
-      <h1>DZATACOINS</h1>
-      <p>Bienvenido a dzatacoins, tu plataforma de confianza para comprar y vender criptomonedas. Aquí podrás encontrar
-        una amplia variedad de criptoactivos y realizar transacciones de forma segura y rápida. Nuestra plataforma
-        cuenta con las últimas medidas de seguridad para proteger tus activos digitales y ofrecerte una experiencia sin
-        igual en el mundo de las criptomonedas. ¡Regístrate ahora y comienza a operar!</p>
-      <p>¡Para comenzar a operar en Dzatacoins, es necesario que te registres utilizando tu dirección de correo
-        electrónico. Una vez registrado, recibirás un ID único que deberás guardar y en cada página de la plataforma
-        para acceder y realizar tus operaciones debes ingresarlo. Este ID garantiza la seguridad de tus transacciones y
-        te proporciona acceso exclusivo a tu cuenta. Regístrate hoy mismo y empieza a operar con total confianza y
-        comodidad!</p>
-      <RouterLink to="/LoginView" id="button" class="btn btn-primary">Registrarse</RouterLink>
+      <h1>INFORMACIÓN DE ALMACENAMIENTO ID</h1>
+      <p>Se utiliza LocalStorage por lo cual su ID quedara almacenado solo temporalmente en el equipo que inicio sección
+        es una función de JavaScript esta API permite a las aplicaciones web almacenar datos en el navegador del usuario
+        de manera persistente. Utiliza pares clave-valor para almacenar la información y proporciona métodos simples
+        como setItem() y getItem() para guardar y recuperar datos. Aunque tiene algunas limitaciones, como un límite de
+        almacenamiento y la incapacidad de almacenar datos complejos, sigue siendo una herramienta útil para almacenar
+        datos simples en el navegador del usuario.</p>
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
-</script>
+<ul>
 
+  </ul>
+
+<script>
+import { mapState } from 'vuex';
+
+export default {
+  computed: {
+    ...mapState(["usuarios"]),
+  },
+};
+</script>
 
 <style scoped>
 .background {
   background-image: url('https://www.xtrafondos.com/wallpapers/bitcoin-criptomonedas-6876.jpg');
   background-size: cover;
-  /* Para que la imagen cubra toda la pantalla con alt shif f */
+  /* Para que la imagen cubra toda la pantalla */
   background-position: center;
   /* Para centrar la imagen */
   min-height: 100vh;

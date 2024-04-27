@@ -1,10 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="header">
+    <router-view></router-view> <!-- Este es el punto donde se mostrarán los componentes enrutados -->
+  </div>
+
+
+
+
 </template>
+
+<script>
+export default {
+  name: 'App',
+  // Otros componentes, datos y métodos pueden ir aquí si es necesario
+  //node_modules/.bin/vue-cli-service serve
+}
+</script>
 
 <style>
 #app {
