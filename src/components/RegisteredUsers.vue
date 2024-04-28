@@ -2,7 +2,7 @@
   <div class="background">
     <div class="container">
       <h1>INFORMACIÓN DE ALMACENAMIENTO ID</h1>
-      <p>Se utiliza LocalStorage por lo cual su ID quedara almacenado solo temporalmente en el equipo que inicio sección
+      <p>Se utiliza LocalStorage por lo cual su ID quedara almacenado solo temporalmente en el equipo que inicio sesión,
         es una función de JavaScript esta API permite a las aplicaciones web almacenar datos en el navegador del usuario
         de manera persistente. Utiliza pares clave-valor para almacenar la información y proporciona métodos simples
         como setItem() y getItem() para guardar y recuperar datos. Aunque tiene algunas limitaciones, como un límite de

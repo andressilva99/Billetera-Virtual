@@ -13,7 +13,8 @@
 
         <!-- Comentario: Div para mostrar el formulario de transacción -->
         <div v-if="sesionIniciada" class="recuadroBienvenida">
-          <h2>Bienvenido, {{ obtenerNombreApellido() }}</h2>
+          <h2>Bienvenido, </h2>
+          <h5>{{ obtenerUsuario() }}</h5>
           <h3>¿Qué operación desea realizar?</h3>
 
           <!-- Comentario: Seleccionar el tipo de operación (comprar o vender) -->
@@ -130,7 +131,7 @@ export default {
       });
     },
 
-    obtenerNombreApellido() {
+    obtenerUsuario() {
       const usuario = this.usuarios.find((usuario) => usuario.idUsuario === this.idUsuario);
       return usuario ? `${usuario.Email}` : '';
     },
@@ -391,5 +392,16 @@ export default {
     /* Ajusta el margen superior para dispositivos móviles */
     margin-bottom: 80px;
   }
+  .recuadroBienvenida {
+    padding: 10px; /* Reducir el padding para pantallas más pequeñas */
+    font-size: 14px; /* Reducir el tamaño del texto para mejor legibilidad */
+  }
 }
+.recuadroBienvenida {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 </style>
